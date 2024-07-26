@@ -9,8 +9,16 @@ const initialState = {
       name: "Layer 1",
       visible: true,
       locked: false,
+      element: [],
     },
   ],
+  canvas: {
+    width: 1280,
+    height: 800,
+    position: { x: 0, y: 0 },
+    scale: 1,
+    zoom: 1,
+  },
   elements: [],
   currentLayer: {},
 };

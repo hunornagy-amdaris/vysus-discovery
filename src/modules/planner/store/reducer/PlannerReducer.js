@@ -38,6 +38,15 @@ const PlannerReducer = (state, action) => {
         currentLayer: action.payload,
       };
 
+    case PLANNER_STORE_CONSTANTS.UPDATE_CANVAS:
+      return {
+        ...state,
+        canvas: {
+          ...state.canvas,
+          ...action.payload,
+        },
+      };
+
     default:
       return state;
   }

@@ -17,10 +17,10 @@ export const usePlannerActions = () => {
     deleteElement: (element) => {
       dispatch({ type: PLANNER_STORE_CONSTANTS.DELETE_ITEM, payload: element });
     },
-    setCurrentLayer: (layer) => {
+    updateCanvas: (options) => {
       dispatch({
-        type: PLANNER_STORE_CONSTANTS.SET_CURRENT_LAYER,
-        payload: layer,
+        type: PLANNER_STORE_CONSTANTS.UPDATE_CANVAS,
+        payload: options,
       });
     },
   };
